@@ -2,6 +2,7 @@ const express = require('express')
 const Users = require('./routes/users')
 const Auth = require('./routes/auth')
 const Contact = require('./routes/contact')
+const connectDB = require('./config/db')
 
 const app = express()
 
@@ -14,6 +15,8 @@ app.use('/api/users', Users)
 app.use('/api/auth', Auth)
 app.use('/api/contact', Contact)
 
+// Connect Database
+connectDB()
 
 const PORT = process.env.PORT || 5000
 
