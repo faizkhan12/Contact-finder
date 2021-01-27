@@ -30,7 +30,7 @@ const ContactState = (props) => {
                 type: 'personal',
             },
             {
-                id: 1,
+                id: 3,
                 name: 'Harry Johnson',
                 email: 'harry@gmail.com',
                 phone: '113-111-1111',
@@ -48,6 +48,10 @@ const ContactState = (props) => {
     }
 
     // Delete Contact
+    const deleteContact = (id) => {
+        dispatch({ type: DELETE_CONTACT, payload: id })
+
+    }
 
     // set current Contact
 
@@ -63,7 +67,8 @@ const ContactState = (props) => {
         <ContactContext.Provider
             value={{
                 contacts: state.contacts,
-                addContact
+                addContact,
+                deleteContact
 
             }}>
             { props.children}
