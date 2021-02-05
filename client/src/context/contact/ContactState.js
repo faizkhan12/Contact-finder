@@ -28,7 +28,7 @@ const ContactState = (props) => {
 
     // Get Contacts 
     const getContacts = async () => {
-       
+
         try {
             const res = await axios.get('/api/contact')
             dispatch({
@@ -69,6 +69,11 @@ const ContactState = (props) => {
 
     }
 
+    // Clear Contacts
+    const clearContacts = () => {
+        dispatch({ type: CLEAR_CONTACT })
+    }
+
     // set current Contact
     const setCurrent = (contact) => {
         dispatch({ type: SET_CURRENT, payload: contact })
@@ -106,6 +111,7 @@ const ContactState = (props) => {
                 getContacts,
                 addContact,
                 deleteContact,
+                clearContacts,
                 updateContact,
                 setCurrent,
                 clearCurrent,
