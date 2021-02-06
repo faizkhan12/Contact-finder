@@ -7,7 +7,9 @@ const About = () => {
                 About this App
             </h1>
             <p className="my-1">
-                This is a full stack React app for keeping contacts.
+                This is the wonderful application for keeping contact records of your loved ones💚 and colleagues💻.
+                <br></br>
+                Made with ❤️ by Faiz Khan
             </p>
             <p className="bg-dark p">
                 <strong>Version: 1.0.0</strong>
