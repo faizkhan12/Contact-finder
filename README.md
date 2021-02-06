@@ -7,10 +7,10 @@ User can keep track of his/her friends contact information.
 * User can edit and delete his/her contact information
 
 ## Technologies used
-React - Front end
-node js - Back end
-database - MongoDB Atlas
-authentication - jwt token
-API testing - postman
+* React - Front end
+* node js - Back end
+* database - MongoDB Atlas
+* authentication - jwt token
+* API testing - postman
 
 ## Results
